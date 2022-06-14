@@ -5,147 +5,150 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <title>Document</title>
     <style>
-        div{ 
-            max-width: 960px;
-            text-align: center;
-            margin: 0 auto;
-            font-family: sans-serif;
-        }
-        ul{
-            margin-bottom: 0px;
-            background-color: rgba(0,0,0,0.5);
-            list-style: none;;
-            padding: 0px;
-        }
-        li{ 
-            padding:10px 0px ;
-            display: inline;
-            padding: 0 15px;
-        }
-
-        img{
-            width: 200px;
-            height: 200px;
-            border-radius: 120px;
-            border: 1px solid white;
-            transition: 0.6s;
-        }
-
-        a:hover{
-            color:rgba(255,255,255,0.5);
-        }
-
-        header{
-            padding-top: 20px ;
-            background: url("img/bg2.png");
-            background-size: cover;
-            background-position: center;
-        }
-
-        h1 a{
-            font-size: 45px;
-            color: white;
-            text-decoration: none;
-        }
-
-        h2{
-            margin:0;
-            padding: 15px 0px 15px 0px;
-        }
-        li a{
-            transition: 0.6s;
-            font-size: 20px;
-            color: white;
-            text-decoration: none;
-        }
-
-        main{
-            margin: 0 auto;
-            background-color: rgba(22, 10, 22, 0.444);
-        }
-
-        p{ 
-        
-           padding: 0px 10px ; 
-        }
-
-        button{
-            margin-bottom: 5px  ;
-            border-radius: 60px;
-            width: 100px;
-            border: none;
-            font-size: 15px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: 0.6s;
-        }
-
-        button:hover{
-            background-color: grey;
-        }
-
-        img:hover{
-            opacity: 0.5;
-        }
-
-        @media (max-width: 500px){
-            li{
-                display: block;
+            body{
+                background:url("phone.jpg");
+                max-width:860px ;
+                margin: 0 auto;
+            }
+            header{
+                text-align: center;
+                margin: 70px 0px 50px 0px ;
+            }
+            h1{
+                margin-top: -10px;
+                color: black;
+                text-shadow: 1px 1px white;
+                font-family: anton, sans-serif;
+                font-size: 60px;
+            }
+            h2{
+                text-shadow: 1px 2px black;
+                color: white;
+                margin-top: -40px;
+                font-size: 20px;
+            }
+            span{
+                float: right;
             }
 
-            h1 a{
-                font-size: 25px;
+            .show p{
+                height: 150px;
             }
 
-        }
+            .show small{
+                opacity: 1;
+            }
 
+            p{
+                cursor: pointer;
+                transition: 0.6s;
+                font-family: anton,sans-serif;
+                height: 15.2px;
+                line-height: 20px;
+                background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 1),rgba(0, 0, 0, .4));
+                color: white;
+                padding:10px;
+                margin: 0;
+                position: absolute;
+                bottom: 0;
+                font-size: 20px;
+            }
+            small{
+                opacity: 0;
+            }
+            .first-article{
+                cursor: pointer;
+                background-image: url("bg2.png");
+            }
 
-    </style> 
-    
+            .second-article{
+                cursor: pointer;
+                background-image: url("bg3png.jpg");
+            }
+            .third-article{
+                cursor: pointer;
+                background-image: url("bh.png");
+            }
+
+            article{
+
+                border-radius: 20px;
+                margin: 50px 10px 20px 10px;
+                position: relative;
+                background-size: cover;
+                height: 220px;
+            }
+
+            @media (max-width:500px) {
+                p{      
+                    text-align: justify;
+                    font-size: 15px;
+                }
+
+                h1{
+                    margin: 0px;
+                    font-size: 30px;
+                }
+
+                h2{
+                    margin-top: 0px;
+                }
+                .show p{
+                height: 170px;
+                }
+            }
+            
+    </style>
 </head>
 
 <body>
-    <div>
-        <header>
-            <img src="img/img-logo.jpg" alt="logo">
-            <h1><a href="#">Vasily Yermak Blog's</a></h1>
-            <ul>
-                <li><a href="#">About me</a></li>
-                <li><a href="#">Info</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </header>
-        <main>
-            <article>
-                <h2>Headlines</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet odio quidem, ipsam eos tempora
-                    architecto quia doloremque soluta aliquid rem minima repudiandae officia. A aut nisi corporis
-                    eveniet, soluta cum!</p>
-                <button>Like</button>
-            </article>
-            <article>
-                <h2>Headlines</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora magni nemo quia iure esse ab?
-                    Deserunt illum, voluptatibus quam eligendi, optio beatae quaerat nesciunt hic saepe expedita libero
-                    laboriosam debitis!</p>
-                <button>Like</button>
-            </article>
-            <article>
-                <h2>Headlines</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque quo illum exercitationem sequi
-                    veniam odio officia fugiat quidem, veritatis, asperiores assumenda explicabo architecto! Delectus,
-                    quidem! Rem voluptatibus totam maxime neque.</p>
-                <button>Like</button>
-            </article>
-        </main>
-    </div>
+    <header>
+        <h1>Security Blog's</h1>
+        <h2>Protect Your Home</h2>
+    </header>
+    <main>
+        <article class="first-article" >
+            <p>
+                Lorem ipsum<span>Save your Life</span><br />
+                <small>Orem ipsum dolor sit amet, consectetur Dolor sit amet consectetur adipisicing elit. Earum saepe
+                    magni explicabo, ducimus deleniti
+                    numquam consectetur non sit dolorum sequi debitis veritatis unde ipsam quos vel, ipsum, magnam
+                    reprehenderit! Iure, dolorum ratione? Quisquam illum assumenda eveniet, libero vitae non ratione.
+                    Veritatis architecto voluptate esse consequatur maxime nam quam! Harum, earum.</small>
+            </p>
+        </article>
+        <article class="second-article">
+            <p>
+                Lorem ipsum<span>Protect your family</span> <br />
+                <small>Orem ipsum dolor sit amet, consectet consectetur adipisicing elit. Tenetur autem cumque officiis
+                    perferendis
+                    provident libero nam nulla! Assumenda sit exercitationem eius vitae quaerat ipsum ullam quam
+                    ducimus,
+                    officia, obcaecati quas iste? Assumenda, velit soluta. Doloribus qui tempora dignissimos nesciunt
+                    mollitia odio velit ullam. Rerum totam atque cupiditate unde quam quia.</small>
+            </p>
+        </article>
+        <article class="third-article">
+            <p>
+                Lorem ipsum dolor<span>Hold your money safety</span><br />
+                <small>Sit amet consectetur adipisicing elit. Obcaecati sed voluptate quidem velit
+                    exercitationem repellat repudiandae quisquam minima quia officia, non tempora illum natus distinctio
+                    error qui eum laboriosam tempore? Odio aperiam nobis adipisci consectetur fugit est recusandae
+                    praesentium sit itaque rem non voluptate magnam, ut perferendis id enim doloribus?</small>
+
+            </p>
+        </article>
+    </main>
     <script>
-        $("button").on("click",function(){
-            alert("clicked!");
-        });
+        $("article").on("click",function(){
+            $(this).toggleClass("show")
+        })
     </script>
 </body>
 
